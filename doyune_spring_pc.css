@@ -173,7 +173,7 @@ font-weight: 500;
     padding-top:10px;
     padding-left: 2px;
     transition:color .2s ease;
-    color: #839fc9
+    color: #839fc9;
 }
 
 .vote-btn[data-type="up"]:hover::before {
