@@ -4,6 +4,60 @@
     outline: none !important;
 }
 
+@font-face {
+    font-family: 'KOMACON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.2);
+    }
+    55% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 배경 */
+
+html {
+    background: linear-gradient(to bottom, #f3f2f0 5%, #afc8f8);
+    height: auto;
+}
+
+body {
+    letter-spacing: -0.05em !important;
+    background: transparent;
+    font-family: KOMACON;
+}
+
+/* 로고 */
+
+header .row>div:nth-child(1)>a {
+    float: left;
+    position: absolute;
+    background:url(https://twitch-coincidence.github.io/doyune_logo_winter.png) no-repeat;
+    background-size: auto 65px;
+    display: block;
+    width: 163px;
+    height: 65px;
+}
+
+header .row>div:nth-child(1)>a img {
+display: none;
+}
+
 
 /* 검색창 */
 
