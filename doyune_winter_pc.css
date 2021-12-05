@@ -1,0 +1,110 @@
+/* 모듈 */
+
+*:focus {
+    outline: none !important;
+}
+
+
+/* 검색창 */
+
+header #right-search-form>input[type=text] {
+    border-radius: 18.6px 18.6px 0px 0px;
+}
+
+/* 검색 버튼 */
+
+header #right-search-form>#right-search-btn {
+    color: #839fc9;
+}
+
+/* 배너 */
+
+header #header-bar>.row {
+    border-radius: 23.19px 23.19px 0px 0px;
+}
+
+#main .menu-wrapper {
+    border-radius: 0px 0px 0px 14.69px;
+}
+
+#main #main-content>div.frame {
+    border-radius: 0px 0px 20px 20px;
+}
+
+header #header-bar #header-top-notice strong.notice-badge, header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame, header #right-search-form>input[type=text] {
+    border: 3.5px solid #839fc9;
+}
+
+/* 상단 배너 역삼각형 */
+
+header #header-bar a.dropdown-toggle {
+    color: #839fc9;
+}
+
+/* 즐겨찾기 스트리머 닉네임 */
+
+.dropdown-menu>li>a {
+    color: #839fc9;
+    transition: .1s;
+}
+
+.dropdown-menu>li>a:hover {
+    background: transparent;
+    transform: scaleX(1.05);
+    transition: .1s;
+}
+
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+    border-radius: 15px;
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.3s cubic-bezier(0.2, 1.5, 0, 1);
+    padding: 8px 0 3px 0px;
+}
+
+/* 즐겨찾기 번호 */
+
+.label-default {
+    background-color: #839fc9;
+}
+
+/* 상단 배너 광고 뱃지 */
+
+header #header-bar #header-top-notice strong.notice-badge {
+    background: #839fc9;
+    border-radius: 15px;
+}
+
+/* 좌측 배너 헤더 */
+
+#main .menu-wrapper>.header {
+    background: #839fc9;
+    font-weight: bold;
+}
+
+/* 좌측 배너 이니셜 */
+
+#main .menu-wrapper>a>em {
+    color: #839fc9;
+}
+
+/* 좌측 배너 하단 */
+
+#main .menu-wrapper a:nth-last-child(1) {
+    border-radius: 0px 0px 0px 14.69px;
+}
+
+/* 좌측 배너 점 */
+
+.fa-square:before {
+    color: #839fc9;
+}
