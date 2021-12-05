@@ -108,3 +108,28 @@ header #header-bar #header-top-notice strong.notice-badge {
 .fa-square:before {
     color: #839fc9;
 }
+
+div#fav-shortcut-area>a {
+    display: none !important;
+}
+div#fav-shortcut-area>a[href="/hong_doyu"] {
+    display: block !important;
+    position: relative;
+    top: -29.38px;
+}
+a.shortcut-link[href="/all"] {
+    position: relative;
+    top: 29.38px;
+}
+#main .menu-wrapper>a.shortcut-link:nth-of-type(1) {
+    border-left: 8px solid #FFC0B0;
+    border-bottom: 1px solid #FFC0B0 !important;
+    background: linear-gradient(
+90deg, #FFC0B0 50%, #FFFFFF 50%) !important;
+    background-position-x: 100% !important;
+    background-size: 200% 200% !important;
+}
+#main .menu-wrapper>a.shortcut-link:hover {
+    background-position-x: 0% !important;
+    transition: 0.4s ease;
+}
