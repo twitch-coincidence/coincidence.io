@@ -145,6 +145,12 @@ header #header-bar #header-top-notice strong.notice-badge {
     font-weight: bold;
 }
 
+/* 좌측 배너 빈 공간 */
+
+#main .menu-wrapper .spacer {
+    display: none;
+}
+
 /* 좌측 배너 이니셜 */
 
 #main .menu-wrapper>a>em {
@@ -163,18 +169,33 @@ header #header-bar #header-top-notice strong.notice-badge {
     color: #839fc9;
 }
 
+/* 좌측 배너 꾸미기 */
+
 div#fav-shortcut-area>a {
     display: none !important;
 }
 div#fav-shortcut-area>a[href="/hong_doyu"] {
+    border-left: 8px solid #aac0de;
+    border-bottom: 1px solid #aac0de !important;
     display: block !important;
     position: relative;
     top: -29.38px;
+    background: linear-gradient(
+90deg, #aac0de 50%, #FFFFFF 50%) !important;
+    background-position-x: 100% !important;
+    background-size: 200% 200% !important;
 }
+
+div#fav-shortcut-area>a[href="/hong_doyu"]:hover {
+    background-position-x: 0% !important;
+    transition: 0.4s ease;
+}
+
 a.shortcut-link[href="/all"] {
     position: relative;
     top: 29.38px;
 }
+    
 #main .menu-wrapper>a.shortcut-link:nth-of-type(1) {
     border-left: 8px solid #FFC0B0;
     border-bottom: 1px solid #FFC0B0 !important;
@@ -183,6 +204,7 @@ a.shortcut-link[href="/all"] {
     background-position-x: 100% !important;
     background-size: 200% 200% !important;
 }
+    
 #main .menu-wrapper>a.shortcut-link:hover {
     background-position-x: 0% !important;
     transition: 0.4s ease;
