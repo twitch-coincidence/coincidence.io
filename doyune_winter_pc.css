@@ -225,7 +225,8 @@ a.shortcut-link[href="/all"] {
     background-image: url(https://twitch-coincidence.github.io/article_background_winter.png);
     background-repeat: no-repeat;
     background-size: 400px;
-    background-position: 70% calc(100% - 134px);
+    background-position: 
+        0% calc(100% - 134px);
 }
 
 img.reply-writer-image.img-circle.error, img.img-rounded.article-profile-img.error {
@@ -234,7 +235,7 @@ img.reply-writer-image.img-circle.error, img.img-rounded.article-profile-img.err
 
 i.fa.fa-heart {
     color: #ff6633;
-    animation: linear 1s heart 7;
+    animation: linear 1s heart infinite;
 }
 
 .article-list-row:nth-child(3n+1) i.fa.fa-heart {
@@ -333,4 +334,61 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
     border: 1px solid #839fc9;
     border-radius: 20px;
     margin: 4px 0;
+}
+
+#viewers{
+    color: #5d6d85;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#board-info #viewers-area #viewers:before {
+    content: "도청자";
+    font-size: 12px;
+    font-weight: 500;
+    background: url(https://cdn.discordapp.com/attachments/577710273994162176/582202325347860491/dou_heart.png) no-repeat;
+    background-position: right;
+    padding-right: 13px;
+    margin-right: 1px;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: "명";
+    cursor: text;
+    color: #5d6d85;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fa-user{
+    display: none;
+}
+
+/* 메인 배너 스트리머 이미지 */
+
+#board-info #board-info-profile-img {
+    width: 100px;
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+    content: url(https://dolgether.github.io/doyu_profile_img2.png);
+}
+
+/* 메인 배너 헤더 가운데 줄 */
+
+#board-info h1 {
+    border-bottom: 1px solid #839fc9;
+    margin-left: 105px;
+}
+
+#board-info #board-info-bottom {
+    float: right;
+}
+
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover {
+    border-radius: 15px;
+}
+
+#article-list #article-option-area {
+    right: 25px;
 }
