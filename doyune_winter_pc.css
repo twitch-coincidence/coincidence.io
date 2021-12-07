@@ -11,6 +11,15 @@
     font-style: normal;
 }
 
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
 @keyframes heart {
     0% {
         transform: scale(1);
@@ -40,6 +49,8 @@ body {
     letter-spacing: -0.05em !important;
     background: transparent;
     font-family: KOMACON;
+    animation: snow 20s linear infinite;
+    background-image: url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'), url("https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
 }
 
 /* 로고 */
@@ -208,4 +219,58 @@ a.shortcut-link[href="/all"] {
 #main .menu-wrapper>a.shortcut-link:hover {
     background-position-x: 0% !important;
     transition: 0.4s ease;
+}
+
+#article-list {
+    background-image: url(https://twitch-coincidence.github.io/article_background_winter.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: 70% calc(100% - 134px);
+}
+
+img.reply-writer-image.img-circle.error, img.img-rounded.article-profile-img.error {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/826401615589539930/2.png);
+}
+
+i.fa.fa-heart {
+    color: #ff6633;
+    animation: linear 1s heart 7;
+}
+
+.article-list-row:nth-child(3n+1) i.fa.fa-heart {
+    animation-delay: calc(1s/3*1);
+}
+
+.article-list-row:nth-child(3n+2) i.fa.fa-heart {
+    animation-delay: calc(1s/3*2);
+}
+
+/* 마우스 커서 포인터 */
+
+html, body, .fr-popup.emoticons, .fr-top, select.form-control, input[type=checkbox], input[type=radio], .opt {
+    cursor: url(https://dolgether.github.io/doyu_cur_default.png) 0 0, auto !important;
+}
+
+/* 마우스 커서 링크 */
+
+#right-search-form>#right-search-btn, #board-info #board-info-bottom #addFavoriteBtn, #article-list #article-option-area>#article-option-area-toggle-btn, #article-list>.article-list-row>.item>.list-title>.list-writer>span, .reply > .reply-header > .reply-writer.logged, .reply-menu, .btn, .fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn, .fr-view img, .pull-left, a {
+    cursor: url(https://dolgether.github.io/doyu_cur_link.png) 0 0, auto !important;
+}
+
+/* 마우스 커서 텍스트 */
+
+span#viewers, span#viewers:before, span#viewers:after, #article-list #boardSearchForm .form-control, .fr-view, .fr-box.fr-basic.fr-element, input[type='text'] {
+    cursor: url(https://dolgether.github.io/doyu_cur_txt.png) 0 0, auto !important;
+}
+
+#movetotop {
+    opacity: 1;
+    background: url(https://dolgether.github.io/doyu_up.png);
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+}
+
+#movetotop > img {
+    display: none !important;
 }
