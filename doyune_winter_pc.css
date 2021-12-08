@@ -225,8 +225,11 @@ a.shortcut-link[href="/all"] {
     background-image: url(https://twitch-coincidence.github.io/article_background_winter.png);
     background-repeat: no-repeat;
     background-size: 400px;
-    background-position: 
-        0% calc(100% - 134px);
+    background-position: 70% calc(100% - 134px);
+}
+
+#article-list>.article-list-row:hover {
+    background: #fafafa80;
 }
 
 img.reply-writer-image.img-circle.error, img.img-rounded.article-profile-img.error {
@@ -391,4 +394,36 @@ img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41d
 
 #article-list #article-option-area {
     right: 25px;
+}
+
+header #right-search-form>#right-search-btn, #article-list>.article-list-row>.item>.list-title>small.comment-count, #board-info #board-info-bottom a, .fa-home, .pagination>li>a, .pagination>li>span {
+    color: #839fc9;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+    color: #5d6d85;
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+    background: #839fc9;
+}
+
+#article-list #article-list-category {
+    border: 2px solid #839fc9;
+    background: #f5d1b8;
+    border-radius: 15px;
+}
+
+article-content-wrapper>.header {
+    border-top: 2px solid #839fc9;
+    background: #f5d1b8;
+}
+
+#article-list #article-list-category>a{
+    background: #f5d1b8;
+    border-radius: 15px;
+}
+
+#article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time {
+    border: 0;
 }
