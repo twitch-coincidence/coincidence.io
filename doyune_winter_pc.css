@@ -38,6 +38,29 @@
     }
 }
 
+@keyframes tree {
+    0% {
+        background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_1.png);
+        background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
+        background-repeat: no-repeat;
+    }
+    33.3% {
+        background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_2.png);
+        background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
+        background-repeat: no-repeat;
+    }
+    66.7% {
+        background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_3.png);
+        background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
+        background-repeat: no-repeat;
+    }
+    100% {
+        background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_1.png);
+        background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
+        background-repeat: no-repeat;
+    }
+}
+
 /* 배경 */
 
 html {
@@ -466,6 +489,7 @@ body:after {
     background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_1.png);
     background-repeat: no-repeat;
     background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
+    animation: tree 1.5s linear infinite;
 }
 
 #board-info > h1 > a:hover:before {
