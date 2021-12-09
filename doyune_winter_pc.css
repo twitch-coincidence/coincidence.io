@@ -410,20 +410,36 @@ header #right-search-form>#right-search-btn, #article-list>.article-list-row>.it
 
 #article-list #article-list-category {
     border: 2px solid #839fc9;
-    background: #f5d1b8;
+    background: #afc9ef;
     border-radius: 15px;
 }
 
 article-content-wrapper>.header {
     border-top: 2px solid #839fc9;
-    background: #f5d1b8;
+    background: #afc9ef;
 }
 
 #article-list #article-list-category>a{
-    background: #f5d1b8;
+    background: #afc9ef;
     border-radius: 15px;
 }
 
 #article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time {
     border: 0;
+}
+
+#article-list>.article-list-row.notice {
+    background-color: #afc9ef;
+}
+
+.pagination>li>a, .pagination>li>span {
+    border: 1px solid #839fc9;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background: #839fc9;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover {
+    border: 1px solid #839fc9;
 }
