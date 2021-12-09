@@ -51,6 +51,7 @@ body {
     font-family: KOMACON;
     animation: snow 20s linear infinite;
     background-image: url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'), url("https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
+    margin-top: 250px;
 }
 
 /* 로고 */
@@ -66,7 +67,7 @@ header .row>div:nth-child(1)>a {
 }
 
 header .row>div:nth-child(1)>a img {
-display: none;
+    display: none;
 }
 
 
@@ -191,8 +192,7 @@ div#fav-shortcut-area>a[href="/hong_doyu"] {
     display: block !important;
     position: relative;
     top: -29.38px;
-    background: linear-gradient(
-90deg, #aac0de 50%, #FFFFFF 50%) !important;
+    background: linear-gradient(90deg, #aac0de 50%, #FFFFFF 50%) !important;
     background-position-x: 100% !important;
     background-size: 200% 200% !important;
 }
@@ -442,4 +442,40 @@ article-content-wrapper>.header {
 
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover {
     border: 1px solid #839fc9;
+}
+
+#board-info > h1 > a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -360px;
+    width: 292px;
+    height: 200px;
+    background: url(https://twitch-coincidence.github.io/main_img_winter.png);
+    left: calc(50% - 216px);
+    z-index: 1;
+}
+
+body:after {
+    content: "";
+    height: 250px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_1.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
+}
+
+#board-info > h1 > a:hover:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -360px;
+    width: 292px;
+    height: 200px;
+    background: url(https://twitch-coincidence.github.io/main_img_winter_2.png);
+    left: calc(50% - 216px);
+    z-index: 1;
 }
