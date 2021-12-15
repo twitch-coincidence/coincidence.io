@@ -133,7 +133,6 @@ header #header-bar a.dropdown-toggle {
 /* 즐겨찾기 스트리머 닉네임 */
 
 .dropdown-menu>li>a {
-    color: #839fc9;
     transition: .1s;
 }
 
@@ -479,7 +478,7 @@ article-content-wrapper>.header {
     z-index: 1;
 }
 
-body:after {
+html:after {
     content: "";
     height: 250px;
     width: 100%;
@@ -502,4 +501,14 @@ body:after {
     background: url(https://twitch-coincidence.github.io/main_img_winter_2.png);
     left: calc(50% - 216px);
     z-index: 1;
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(#e8b8ff, #ffa8e180, transparent);
+    top: 0px;
 }
