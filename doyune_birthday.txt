@@ -560,3 +560,36 @@ a[class="schedule-link more"]:hover { background-position-x: 0% !important; tran
     border-radius: 15px;
     background: #fff;
 }
+
+#article-list-row-58911391>.item>.list-title>a {
+    font-size: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+    height: 0 !important;
+}
+
+#article-list-row-58911391 {
+    border: 0 !important;
+}
+
+#article-list-row-58911391>.item>.list-title>a:before {
+    content: '';
+    display: block !important;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    background: url(https://cdn-icons-png.flaticon.com/512/561/561188.png) 0 0/54px no-repeat;
+    top: -70px;
+    right: 18px;
+    filter: brightness(1);
+}
+
+#article-list-row-58911391>.item>.list-checkbox, #article-list-row-58911391>.item>.list-header, #article-list-row-58911391>.item>.list-time, #article-list-row-58911391>.item>.list-title>div, #article-list-row-58911391>.item>.list-title>small, #article-list-row-58911391>.item>.list-title>span {
+    display: none !important;
+}
+
+#article-list-row-58911391>.item>.list-title {
+    font-size: 0 !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+}
