@@ -11,15 +11,6 @@
     font-style: normal;
 }
 
-@keyframes snow {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
 @keyframes heart {
     0% {
         transform: scale(1);
@@ -38,33 +29,10 @@
     }
 }
 
-@keyframes tree {
-    0% {
-        background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_1.png);
-        background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
-        background-repeat: no-repeat;
-    }
-    33.3% {
-        background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_2.png);
-        background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
-        background-repeat: no-repeat;
-    }
-    66.7% {
-        background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_3.png);
-        background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
-        background-repeat: no-repeat;
-    }
-    100% {
-        background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_1.png);
-        background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
-        background-repeat: no-repeat;
-    }
-}
-
 /* 배경 */
 
 html {
-    background: linear-gradient(to bottom, #f3f2f0 5%, #afc8f8);
+    background: linear-gradient(to bottom, #FFC0B0, #FECFAE, #FDDDAB, #FBECA9, #FAFAA6, #DEF7BA, #C5EAB1, #9FD9A4, #9ED2B2, #9CCBC0, #9BC3CE, #99BCDC, #98B5EA, #96A1E7, #969ADC, #9793D2, #978DC7, #9886BD, #987FB2);
     height: auto;
 }
 
@@ -72,8 +40,8 @@ body {
     letter-spacing: -0.05em !important;
     background: transparent;
     font-family: KOMACON;
-    animation: snow 20s linear infinite;
-    background-image: url('https://cdn.discordapp.com/attachments/460145928850898945/515694458633846831/snow.png'), url("https://cdn.discordapp.com/attachments/460145928850898945/515694460668084274/snow3.png"), url("https://cdn.discordapp.com/attachments/460145928850898945/515694462278828073/snow2.png");
+    background-image: url('https://twitch-coincidence.github.io/birthday_background.png');
+    background-size: 400px;
     margin-top: 250px;
 }
 
@@ -474,7 +442,7 @@ article-content-wrapper>.header {
     top: -360px;
     width: 292px;
     height: 200px;
-    background: url(https://twitch-coincidence.github.io/main_img_winter.png);
+    background: url(https://twitch-coincidence.github.io/main_img_birthday.png);
     left: calc(50% - 216px);
     z-index: 1;
 }
@@ -486,10 +454,10 @@ html:after {
     display: block;
     position: absolute;
     top: 0px;
-    background: url(https://twitch-coincidence.github.io/snowman.png), url(https://twitch-coincidence.github.io/tree_1.png);
+    background: url(https://twitch-coincidence.github.io/snowman.png), url(https://cdn.discordapp.com/attachments/897716403551993886/915244551520788541/deco2.png);
     background-repeat: no-repeat;
+    background-size: auto 200px;
     background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
-    animation: tree 1.5s linear infinite;
 }
 
 #board-info > h1 > a:hover:before {
