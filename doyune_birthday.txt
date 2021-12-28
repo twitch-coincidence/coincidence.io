@@ -1,0 +1,562 @@
+/* 모듈 */
+
+*:focus {
+    outline: none !important;
+}
+
+@font-face {
+    font-family: 'KOMACON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.2);
+    }
+    55% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 배경 */
+
+html {
+    background: linear-gradient(to bottom, #FFC0B0, #FECFAE, #FDDDAB, #FBECA9, #FAFAA6, #DEF7BA, #C5EAB1, #9FD9A4, #9ED2B2, #9CCBC0, #9BC3CE, #99BCDC, #98B5EA, #96A1E7, #969ADC, #9793D2, #978DC7, #9886BD, #987FB2);
+    height: auto;
+}
+
+body {
+    letter-spacing: -0.05em !important;
+    background: transparent;
+    font-family: KOMACON;
+    background-image: url('https://twitch-coincidence.github.io/birthday_background.png');
+    background-size: 400px;
+    margin-top: 250px;
+}
+
+/* 로고 */
+
+header .row>div:nth-child(1)>a {
+    float: left;
+    position: absolute;
+    background:url(https://twitch-coincidence.github.io/doyune_logo_winter.png) no-repeat;
+    background-size: auto 65px;
+    display: block;
+    width: 163px;
+    height: 65px;
+}
+
+header .row>div:nth-child(1)>a img {
+    display: none;
+}
+
+
+/* 검색창 */
+
+header #right-search-form>input[type=text] {
+    border-radius: 18.6px 18.6px 0px 0px;
+}
+
+/* 검색 버튼 */
+
+header #right-search-form>#right-search-btn {
+    color: #839fc9;
+}
+
+/* 배너 */
+
+header #header-bar>.row {
+    border-radius: 23.19px 23.19px 0px 0px;
+}
+
+#main .menu-wrapper {
+    border-radius: 0px 0px 0px 14.69px;
+}
+
+#main #main-content>div.frame {
+    border-radius: 0px 0px 20px 20px;
+}
+
+header #header-bar #header-top-notice strong.notice-badge, header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame, header #right-search-form>input[type=text] {
+    border: 3.5px solid #839fc9;
+}
+
+/* 상단 배너 역삼각형 */
+
+header #header-bar a.dropdown-toggle {
+    color: #839fc9;
+}
+
+/* 즐겨찾기 스트리머 닉네임 */
+
+.dropdown-menu>li>a {
+    transition: .1s;
+}
+
+.dropdown-menu>li>a:hover {
+    background: transparent;
+    transform: scaleX(1.05);
+    transition: .1s;
+}
+
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+    border-radius: 15px;
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.3s cubic-bezier(0.2, 1.5, 0, 1);
+    padding: 8px 0 3px 0px;
+}
+
+/* 즐겨찾기 번호 */
+
+.label-default {
+    background-color: #839fc9;
+}
+
+/* 상단 배너 광고 뱃지 */
+
+header #header-bar #header-top-notice strong.notice-badge {
+    background: #839fc9;
+    border-radius: 15px;
+}
+
+/* 좌측 배너 헤더 */
+
+#main .menu-wrapper>.header {
+    background: #839fc9;
+    font-weight: bold;
+}
+
+/* 좌측 배너 빈 공간 */
+
+#main .menu-wrapper .spacer {
+    display: none;
+}
+
+/* 좌측 배너 이니셜 */
+
+#main .menu-wrapper>a>em {
+    color: #839fc9;
+}
+
+/* 좌측 배너 하단 */
+
+#main .menu-wrapper a:nth-last-child(1) {
+    border-radius: 0px 0px 0px 14.69px;
+}
+
+/* 좌측 배너 점 */
+
+.fa-square:before {
+    color: #839fc9;
+}
+
+/* 좌측 배너 꾸미기 */
+
+div#fav-shortcut-area>a {
+    display: none !important;
+}
+div#fav-shortcut-area>a[href="/hong_doyu"] {
+    border-left: 8px solid #aac0de;
+    border-bottom: 1px solid #aac0de !important;
+    display: block !important;
+    position: relative;
+    top: -29.38px;
+    background: linear-gradient(90deg, #aac0de 50%, #FFFFFF 50%) !important;
+    background-position-x: 100% !important;
+    background-size: 200% 200% !important;
+}
+
+div#fav-shortcut-area>a[href="/hong_doyu"]:hover {
+    background-position-x: 0% !important;
+    transition: 0.4s ease;
+}
+
+a.shortcut-link[href="/all"] {
+    position: relative;
+    top: 29.38px;
+}
+    
+#main .menu-wrapper>a.shortcut-link:nth-of-type(1) {
+    border-left: 8px solid #FFC0B0;
+    border-bottom: 1px solid #FFC0B0 !important;
+    background: linear-gradient(
+90deg, #FFC0B0 50%, #FFFFFF 50%) !important;
+    background-position-x: 100% !important;
+    background-size: 200% 200% !important;
+}
+    
+#main .menu-wrapper>a.shortcut-link:hover {
+    background-position-x: 0% !important;
+    transition: 0.4s ease;
+}
+
+#article-list {
+    background-image: url(https://twitch-coincidence.github.io/article_background_winter.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: 70% calc(100% - 134px);
+}
+
+#article-list>.article-list-row:hover {
+    background: #fafafa80;
+}
+
+img.reply-writer-image.img-circle.error, img.img-rounded.article-profile-img.error {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/826401615589539930/2.png);
+}
+
+i.fa.fa-heart {
+    color: #ff6633;
+    animation: linear 1s heart infinite;
+}
+
+.article-list-row:nth-child(3n+1) i.fa.fa-heart {
+    animation-delay: calc(1s/3*1);
+}
+
+.article-list-row:nth-child(3n+2) i.fa.fa-heart {
+    animation-delay: calc(1s/3*2);
+}
+
+/* 마우스 커서 포인터 */
+
+html, body, .fr-popup.emoticons, .fr-top, select.form-control, input[type=checkbox], input[type=radio], .opt {
+    cursor: url(https://dolgether.github.io/doyu_cur_default.png) 0 0, auto !important;
+}
+
+/* 마우스 커서 링크 */
+
+#right-search-form>#right-search-btn, #board-info #board-info-bottom #addFavoriteBtn, #article-list #article-option-area>#article-option-area-toggle-btn, #article-list>.article-list-row>.item>.list-title>.list-writer>span, .reply > .reply-header > .reply-writer.logged, .reply-menu, .btn, .fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn, .fr-view img, .pull-left, a {
+    cursor: url(https://dolgether.github.io/doyu_cur_link.png) 0 0, auto !important;
+}
+
+/* 마우스 커서 텍스트 */
+
+span#viewers, span#viewers:before, span#viewers:after, #article-list #boardSearchForm .form-control, .fr-view, .fr-box.fr-basic.fr-element, input[type='text'] {
+    cursor: url(https://dolgether.github.io/doyu_cur_txt.png) 0 0, auto !important;
+}
+
+#movetotop {
+    opacity: 1;
+    background: url(https://dolgether.github.io/doyu_up.png);
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+}
+
+#movetotop > img {
+    display: none !important;
+}
+
+/* 작성자 (스트리머) */
+
+img[src="https://static-cdn.jtvnw.net/badges/v1/5527c58c-fb7d-422d-b71b-f309dcb85cc1/1"] {
+    content: url(https://dolgether.github.io/doyu_streamer_icon.png) !important;
+    width: 18px;
+}
+
+/* 작성자 (트게더 관리자) */
+
+img[src="https://static-cdn.jtvnw.net/badges/v1/3267646d-33f0-4b17-b3df-f923a41db1d0/1"] {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/592335072661733436/728a895013f128c8.png) !important;
+    width: 18px;
+}
+
+.vote-btn[data-type="up"] {
+    border: none;
+    font-size: 0;
+    outline: 0 !important; 
+}
+
+.vote-btn[data-type="up"]:hover {
+    background: none !important;
+}
+
+.vote-btn[data-type="up"]::before {
+    display: inline-block;
+    background: white;
+    border: solid #839fc9 1px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    font: normal 22px/1 FontAwesome;
+    font-size: 26pt;
+    content: "\f164";
+    padding-top:10px;
+    padding-left: 2px;
+    transition:color .2s ease;
+    color: #839fc9;
+}
+
+.vote-btn[data-type="up"]:hover::before {
+    background: #839fc9;
+    color: white;
+}
+
+.vote-btn[data-type="up"] span {
+    float: left;
+    padding-top: 14px;
+    padding-left: 15px;
+    font-size: 22px;
+    color: #839fc9;
+}
+
+#article-list>.article-list-row {
+    border: 1px solid #839fc9;
+    border-radius: 20px;
+    margin: 4px 0;
+}
+
+#viewers{
+    color: #5d6d85;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#board-info #viewers-area #viewers:before {
+    content: "도청자";
+    font-size: 12px;
+    font-weight: 500;
+    background: url(https://cdn.discordapp.com/attachments/577710273994162176/582202325347860491/dou_heart.png) no-repeat;
+    background-position: right;
+    padding-right: 13px;
+    margin-right: 1px;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: "명";
+    cursor: text;
+    color: #5d6d85;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fa-user{
+    display: none;
+}
+
+/* 메인 배너 스트리머 이미지 */
+
+#board-info #board-info-profile-img {
+    width: 100px;
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+    content: url(https://dolgether.github.io/doyu_profile_img2.png);
+}
+
+/* 메인 배너 헤더 가운데 줄 */
+
+#board-info h1 {
+    border-bottom: 1px solid #839fc9;
+    margin-left: 105px;
+}
+
+#board-info #board-info-bottom {
+    float: right;
+}
+
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover {
+    border-radius: 15px;
+    background: #fff;
+}
+
+#article-list #article-option-area {
+    right: 25px;
+}
+
+header #right-search-form>#right-search-btn, #article-list>.article-list-row>.item>.list-title>small.comment-count, #board-info #board-info-bottom a, .fa-home, .pagination>li>a, .pagination>li>span {
+    color: #839fc9;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+    color: #5d6d85;
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+    background: #839fc9;
+}
+
+#article-list #article-list-category {
+    border: 2px solid #839fc9;
+    background: #afc9ef;
+    border-radius: 15px;
+}
+
+article-content-wrapper>.header {
+    border-top: 2px solid #839fc9;
+    background: #afc9ef;
+}
+
+#article-list #article-list-category>a{
+    background: #afc9ef;
+    border-radius: 15px;
+}
+
+#article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time {
+    border: 0;
+}
+
+#article-list>.article-list-row.notice {
+    background-color: #afc9ef;
+}
+
+.pagination>li>a, .pagination>li>span {
+    border: 1px solid #839fc9;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background: #839fc9;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover {
+    border: 1px solid #839fc9;
+}
+
+#board-info > h1 > a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -360px;
+    width: 292px;
+    height: 200px;
+    background: url(https://twitch-coincidence.github.io/main_img_birthday.png);
+    left: calc(50% - 216px);
+    z-index: 1;
+}
+
+html:after {
+    content: "";
+    height: 250px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    background: url(https://twitch-coincidence.github.io/snowman.png), url(https://cdn.discordapp.com/attachments/897716403551993886/915244551520788541/deco2.png);
+    background-repeat: no-repeat;
+    background-size: auto 200px;
+    background-position: calc(50% - 375px) 25px, calc(50% + 375px) 25px;
+}
+
+#board-info > h1 > a:hover:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -360px;
+    width: 292px;
+    height: 200px;
+    background: url(https://twitch-coincidence.github.io/main_img_winter_2.png);
+    left: calc(50% - 216px);
+    z-index: 1;
+}
+
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(#e8b8ff, #ffa8e155, transparent);
+    top: 0px;
+}
+
+a[href="/all"] { border-left: 8px solid #FFC0B0; border-bottom: 1px solid #FFC0B0 !important; background: linear-gradient(90deg, #FFC0B0 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/all"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/streamer"] { border-left: 8px solid #FECFAE; border-bottom: 1px solid #FECFAE !important; background: linear-gradient(90deg, #FECFAE 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/streamer"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/community"] { border-left: 8px solid #FDDDAB; border-bottom: 1px solid #FDDDAB !important; background: linear-gradient(90deg, #FDDDAB 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/community"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/clips"] { border-left: 8px solid #FBECA9; border-bottom: 1px solid #FBECA9 !important; background: linear-gradient(90deg, #FBECA9 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/clips"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+
+
+a[href="https://ranking.tgd.kr"] { border-left: 8px solid #FAFAA6; border-bottom: 1px solid #FAFAA6 !important; background: linear-gradient(90deg, #FAFAA6 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://ranking.tgd.kr"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="https://battle.dog"] { border-left: 8px solid #DEF7BA; border-bottom: 1px solid #DEF7BA !important; background: linear-gradient(90deg, #DEF7BA 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://battle.dog"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/pr"] { border-left: 8px solid #C5EAB1; border-bottom: 1px solid #C5EAB1 !important; background: linear-gradient(90deg, #C5EAB1 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/pr"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/recruit_new"] { border-left: 8px solid #9FD9A4; border-bottom: 1px solid #9FD9A4 !important; background: linear-gradient(90deg, #9FD9A4 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/recruit_new"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/qna"] { border-left: 8px solid #9ED2B2; border-bottom: 1px solid #9ED2B2 !important; background: linear-gradient(90deg, #9ED2B2 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/qna"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/tip"] { border-left: 8px solid #9CCBC0; border-bottom: 1px solid #9CCBC0 !important; background: linear-gradient(90deg, #9CCBC0 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/tip"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/notice"] { border-left: 8px solid #9BC3CE; border-bottom: 1px solid #9BC3CE !important; background: linear-gradient(90deg, #9BC3CE 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/notice"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/event"] { border-left: 8px solid #99BCDC; border-bottom: 1px solid #99BCDC !important; background: linear-gradient(90deg, #99BCDC 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/event"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="/suggestion2"] { border-left: 8px solid #98B5EA; border-bottom: 1px solid #98B5EA !important; background: linear-gradient(90deg, #98B5EA 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="/suggestion2"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="https://twitch.tv"] { border-left: 8px solid #96A1E7; border-bottom: 1px solid #96A1E7 !important; background: linear-gradient(90deg, #96A1E7 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://twitch.tv"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="https://twip.kr"] { border-left: 8px solid #969ADC; border-bottom: 1px solid #969ADC !important; background: linear-gradient(90deg, #969ADC 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://twip.kr"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="https://www.twitch.tv/creatorcamp/ko-kr"] { border-left: 8px solid #9793D2; border-bottom: 1px solid #9793D2 !important; background: linear-gradient(90deg, #9793D2 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://www.twitch.tv/creatorcamp/ko-kr"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[href="https://goo.gl/forms/ALDa2tEqh31kYmCm1"] { border-left: 8px solid #978DC7; border-bottom: 1px solid #978DC7 !important; background: linear-gradient(90deg, #978DC7 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[href="https://goo.gl/forms/ALDa2tEqh31kYmCm1"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[data-type="header-pc-date"] { border-left: 8px solid #9886BD; border-bottom: 1px solid #9886BD !important; background: linear-gradient(90deg, #9886BD 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; font-size: 10.5px !important; }
+a[class="schedule-link"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+a[class="schedule-link more"] { border-left: 8px solid #987FB2; border-bottom: 1px solid #987FB2 !important; background: linear-gradient(90deg, #987FB2 50%, #FFFFFF 50%) !important; background-position-x: 100% !important; }
+a[class="schedule-link more"]:hover { background-position-x: 0% !important; transition: 0.4s ease; }
+
+#main .menu-wrapper>a {
+    background-size: 200% 200% !important;
+}
+
+#article-list #article-list-category.can-float {
+    border: 2px solid #839fc9;
+    background: #afc9ef;
+    border-radius: 15px;
+}
+
+#article-list #article-list-category.can-float>a {
+    background: #afc9ef;
+    border-radius: 15px;
+}
+
+#article-list #article-list-category.can-float > a.active, #article-list #article-list-category.can-float>a:hover {
+    border-radius: 15px;
+    background: #fff;
+}
