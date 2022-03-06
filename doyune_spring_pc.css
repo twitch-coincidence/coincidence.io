@@ -51,12 +51,12 @@ display: none; /*기본 로고 숨김*/
 }
 
 header #header-bar>.row, #main #main-content>div.frame {
-    border-top: 5px solid #839fc9 !important;
-    border: 1px solid #839fc9;
+    border-top: 5px solid #e17da8 !important;
+    border: 1px solid #e17da8;
 }
 
 header #right-search-form>input[type=text]{
-border: 3px solid #839fc9;
+border: 3px solid #e17da8;
 }
 
 header #right-search-form>#right-search-btn,
@@ -64,7 +64,7 @@ header #right-search-form>#right-search-btn,
 #board-info #board-info-bottom a,
 .fa-home,
 .pagination>li>a, .pagination>li>span{
-color: #839fc9;
+color: #e17da8;
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span{
@@ -73,17 +73,17 @@ color: #5d6d85;
 
 header #header-bar #header-top-notice strong.notice-badge,
 #article-list>.article-list-row>.item>.list-header>span{
-background: #839fc9;
+background: #e17da8;
 }
 
 #article-list #article-list-category {
-    border: 2px solid #839fc9;
+    border: 2px solid #e17da8;
     background: #eef5ff;
     border-radius: 15px;
 }
 
 article-content-wrapper>.header {
-    border-top: 2px solid #839fc9;
+    border-top: 2px solid #e17da8;
     background: #eef5ff;
 }
 
@@ -94,7 +94,7 @@ article-content-wrapper>.header {
 
 .pagination>li>a,
 .pagination>li>span{
-border: 1px solid #839fc9;
+border: 1px solid #e17da8;
 }
 
 .pagination>.active>a,
@@ -103,18 +103,18 @@ border: 1px solid #839fc9;
 .pagination>.active>span, 
 .pagination>.active>span:focus,
 .pagination>.active>span:hover{
-background: #839fc9;
+background: #e17da8;
 }
 
 .pagination>.active>a,
 .pagination>.active>a:focus,
 .pagination>.active>a:hover{
-border: 1px solid #839fc9;
+border: 1px solid #e17da8;
 }
 
 .btn-primary{
-background: #839fc9;
-border: 1px solid #839fc9;
+background: #e17da8;
+border: 1px solid #e17da8;
 }
 
 #viewers{
@@ -162,7 +162,7 @@ font-weight: 500;
 .vote-btn[data-type="up"]::before {
     display: inline-block;
     background: white;
-    border: solid #839fc9 1px;
+    border: solid #e17da8 1px;
     float: left;
     width: 60px;
     height: 60px;
@@ -173,11 +173,11 @@ font-weight: 500;
     padding-top:10px;
     padding-left: 2px;
     transition:color .2s ease;
-    color: #839fc9;
+    color: #e17da8;
 }
 
 .vote-btn[data-type="up"]:hover::before {
-    background: #839fc9;
+    background: #e17da8;
     color: white;
 }
 
@@ -186,7 +186,7 @@ font-weight: 500;
     padding-top: 14px;
     padding-left: 15px;
     font-size: 22px;
-    color: #839fc9;
+    color: #e17da8;
 }
 
 /* 배너 */
@@ -198,21 +198,21 @@ header #header-bar #header-top-notice strong.notice-badge, header #header-bar>.r
 /* 좌측 배너 */
 
 #main .menu-wrapper {
-    border: 1px solid #839fc9;
+    border: 1px solid #e17da8;
     border-top: none;
 }
 
 /* 좌측 배너 헤더 */
 
 #main .menu-wrapper>.header {
-    background: #839fc9;
+    background: #e17da8;
     border-radius: 15px 15px 0 0;
 }
 
 /* 좌측 배너 이니셜 */
 
 #main .menu-wrapper>a>em {
-    color: #839fc9;
+    color: #e17da8;
 }
 
 /* 좌측 배너 빈 공간 */
@@ -230,7 +230,7 @@ header #header-bar #header-top-notice strong.notice-badge, header #header-bar>.r
 /* 좌측 배너 점 */
 
 .fa-square:before {
-    color: #839fc9;
+    color: #e17da8;
 }
 
 /* 작성자 (스트리머) */
@@ -260,7 +260,7 @@ img[alt="Moderator"] {
 /* 메인 배너 헤더 가운데 줄 */
 
 #board-info h1 {
-    border-bottom: 1px solid #839fc9;
+    border-bottom: 1px solid #e17da8;
     margin-left: 105px;
 }
 
@@ -287,7 +287,7 @@ body {
 }
 
 #article-content-wrapper>.header {
-    border-top: 2px solid #839fc9;
+    border-top: 2px solid #e17da8;
     background: #eef5ff;
 }
 
