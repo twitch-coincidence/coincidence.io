@@ -364,7 +364,7 @@ span#viewers, span#viewers:before, span#viewers:after, #article-list #boardSearc
 }
 
 #article-list>.article-list-row.notice {
-    background-color: #dbe5fb;
+    background-color: #fbe0fb;
 }
 
 #article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time {
