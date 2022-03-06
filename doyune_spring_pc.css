@@ -24,7 +24,7 @@
 }
 
 html {
-    background: linear-gradient(to bottom, #f3f2f0 5%, #ffc8c8);
+    background: linear-gradient(to bottom, #c8e9ff 5%, #ffcee3);
     height: auto;
 }
 
@@ -235,14 +235,14 @@ header #header-bar #header-top-notice strong.notice-badge, header #header-bar>.r
 
 /* 작성자 (스트리머) */
 
-img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
+img[alt="Broadcaster"] {
     content: url(https://dolgether.github.io/doyu_streamer_icon.png) !important;
     width: 18px;
 }
 
 /* 작성자 (트게더 관리자) */
 
-img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
+img[alt="Moderator"] {
     content: url(https://cdn.discordapp.com/attachments/577710273994162176/592335072661733436/728a895013f128c8.png?raw=true) !important;
     width: 18px;
 }
@@ -278,7 +278,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 body {
     animation: snow 20s linear infinite;
-    background-image: url('https://dandegimon.github.io/silgerher/images/sakura1.png'), url('https://dandegimon.github.io/silgerher/images/sakura2.png'), url('https://dandegimon.github.io/silgerher/images/sakura3.png');
+    background-image: url(https://twitch-coincidence.github.io/sakura1.png), url(https://twitch-coincidence.github.io/sakura2.png), url(https://twitch-coincidence.github.io/sakura3.png);
 }
 
 @keyframes snow {
