@@ -89,7 +89,7 @@ article-content-wrapper>.header {
 }
 
 #article-list #article-list-category>a{
-    background: #eef5ff;
+    background: #eef5ff !important;
     border-radius: 15px;
 }
 
@@ -271,6 +271,7 @@ img[alt="Moderator"] {
 
 #article-list #article-list-category > a.active, #article-list #article-list-category>a:hover {
     border-radius: 15px;
+    background: #fff !important;
 }
 
 #article-list #article-option-area {
