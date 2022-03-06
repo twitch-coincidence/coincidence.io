@@ -37,13 +37,14 @@ body {
 
 
 header .row>div:nth-child(1)>a {
-float: left;
-position: absolute;
-background:url(https://dolgether.github.io/doyu_TGDlogo2.png) no-repeat;
-background-size: auto 65px;
-display: block;
-width: 163px;
-height: 65px;
+    float: left;
+    position: absolute;
+    background: url(https://twitch-coincidence.github.io/doyune_logo_spring.png) no-repeat;
+    background-size: auto 200px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    top: -105px;
 }
 
 header .row>div:nth-child(1)>a img {
@@ -281,6 +282,7 @@ img[alt="Moderator"] {
 body {
     animation: snow 20s linear infinite;
     background-image: url(https://twitch-coincidence.github.io/sakura1.png), url(https://twitch-coincidence.github.io/sakura2.png), url(https://twitch-coincidence.github.io/sakura3.png);
+    padding-top: 90px;
 }
 
 @keyframes snow {
