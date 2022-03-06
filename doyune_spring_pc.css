@@ -77,9 +77,10 @@ background: #e17da8;
 }
 
 #article-list #article-list-category {
-    border: 2px solid #e17da8;
+    border: 2px solid #e17da8 !important;
     background: #eef5ff;
-    border-radius: 15px;
+    border-radius: 15px !important;
+    box-shadow: none !important;
 }
 
 article-content-wrapper>.header {
