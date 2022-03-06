@@ -322,10 +322,10 @@ span#viewers, span#viewers:before, span#viewers:after, #article-list #boardSearc
 
 #movetotop {
     opacity: 1;
-    background: url(https://dolgether.github.io/doyu_up.png);
-    width: 80px;
-    height: 80px;
-    background-size: 80px 80px;
+    background: url(https://cdn.discordapp.com/attachments/577710273994162176/949311546515914773/0634477b3fea84be.png);
+    width: 160px;
+    height: 160px;
+    background-size: 160px;
 }
 
 #movetotop > img {
