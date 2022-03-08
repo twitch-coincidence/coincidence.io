@@ -11,53 +11,74 @@ body {
 	font-family: KOMACON;
 }
 header{
-border-bottom: 4px solid #8ca7d0;
-background: #deeafe;
+    border-bottom: 4px solid #e17da8;
+    background: #fbe0fb;
+    height: 100px;
+}
+
+header.nav-up {
+    top: -100px;
+}
+
+header>#header-area>#header-bar-link {
+    position: absolute;
+    top: 30px;
+    left: -5px;
+}
+
+header>#header-area>#header-search-link {
+    position: absolute;
+    right: -5px;
+    top: 30px;
 }
 
 body div:nth-child(6){
-background: #fff;
+	background: #fff;
 }
 
 header>#header-area>a>h1 {
-    background: url(https://dolgether.github.io/doyu_TGDlogo2.png) no-repeat;
-    background-size: 110px auto;
+    background: url(https://twitch-coincidence.github.io/doyune_logo_spring.png) no-repeat;
+    background-size: 120px auto;
     display: block;
-    width: 110px;
-    height: 60px;
-    left: calc(50% - 55px);
+    width: 120px;
+    height: 120px;
+    left: calc(50% - 60px);
     float: left;
     position: absolute;
-    top: 0px;
+    top: -10px;
 }
 
 header>#header-area>#header-search-link,
 header>#header-area>#header-bar-link,
 header > #header-search-bar #header-close-search-btn,
 header > #header-search-bar #header-search-btn{
-color: #8ca7d0;
+	color: #e17da8;
 }
 
 header > #header-search-bar #header-search-input{
-border: 2px solid #8ca7d0;
+	border: 2px solid #e17da8;
 }
 
 #article-list #article-list-category>a,
 #article-list #article-list-category,
 #article-content-wrapper>.header{
-background: #f0f5fd;
+	background: #fef7fe;
 }
 
 nav#nav{
-background-color: #fff;
+	background-color: #fff;
 }
 
 #header-top-notice strong.notice-badge,
 #article-list>.article-list-row>.item>.list-header>span,
 .btn-primary,
 nav#nav>.nav-header{
-background: #8ca7d0;
+background: #e17da8;
 border: 0;
+}
+
+#article-list>.article-list-row.notice {
+    background-color: #fbe0fb;
 }
 
 #article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span{
@@ -67,7 +88,7 @@ color: #5d6d85;
 #article-list>.article-list-row>.item>a.list-title>small.comment-count,
 .fa-home,
 nav#nav>#nav-upper>#header-close-bar-link{
-color: #8ca7d0;
+color: #e17da8;
 }
 
 .pagination>.active>a,
@@ -76,18 +97,18 @@ color: #8ca7d0;
 .pagination>.active>span,
 .pagination>.active>span:focus,
 .pagination>.active>span:hover{
-background: #8ca7d0;
-border-color: #8ca7d0;
+background: #e17da8;
+border-color: #e17da8;
 }
 
 .pagination>li>a,
 .pagination>li>span{
-color: #8ca7d0;
-border-color: #8ca7d0;
+color: #e17da8;
+border-color: #e17da8;
 }
 
 footer{
-background: #f0f5fd;
+background: #fef7fe;
 }
 
 #viewers{
