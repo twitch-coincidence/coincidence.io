@@ -391,3 +391,16 @@ i.fa.fa-heart {
 .article-list-row:nth-child(3n+2) i.fa.fa-heart {
     animation-delay: calc(1s/3*2);
 }
+
+
+div#fav-shortcut-area>a[href="/hong_doyu"] {
+    background-image: url(https://twitch-coincidence.github.io/2022/summer/domak2.png) !important;
+    background-size: auto 29.38px !important;
+    background-repeat: no-repeat !important;
+    background-position: calc(100% - 10px) calc(100% + 29.38px) !important;
+}
+
+div#fav-shortcut-area>a[href="/hong_doyu"]:hover {
+    background-position-y: 0% !important;
+    transition: 0.4s ease;
+}
