@@ -134,6 +134,7 @@ font-weight: 500;
     background-position: right;
     padding-right: 13px;
     margin-right: 1px;
+    margin-left: 60px;
 }
 
 #board-info #viewers-area #viewers:after {
@@ -403,4 +404,16 @@ div#fav-shortcut-area>a[href="/hong_doyu"] {
 div#fav-shortcut-area>a[href="/hong_doyu"]:hover {
     background-position-y: 0% !important;
     transition: 0.4s ease;
+}
+
+#viewers-area:before {
+    content: "";
+    display: block;
+    background: url(https://twitch-coincidence.github.io/2022/summer/domak3.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 260px;
+    background-size: 60px auto;
 }
