@@ -41,11 +41,12 @@ body {
 header .row>div:nth-child(1)>a {
     float: left;
     position: absolute;
-    background: url(https://twitch-coincidence.github.io/2022/summer/logoimg.png) no-repeat;
+    background: url(https://twitch-coincidence.github.io/2022/summer/logoimg.png) no-repeat, url(http://twitch-coincidence.github.io/2022/summer/domak1.png) no-repeat;
     background-size: auto 55px;
     display: block;
     width: 200px;
     height: 55px;
+    background-position: left, right;
 }
 
 header .row>div:nth-child(1)>a img {
