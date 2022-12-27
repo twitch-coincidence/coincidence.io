@@ -24,7 +24,7 @@
 }
 
 html {
-    background: linear-gradient(white, #6697d9 75%);
+    background: linear-gradient(#ffffff, #b0b1c7 75%);
     height: auto;
 }
 
@@ -41,12 +41,12 @@ body {
 header .row>div:nth-child(1)>a {
     float: left;
     position: absolute;
-    background: url(https://twitch-coincidence.github.io/2022/summer/logoimg.png) no-repeat, url(http://twitch-coincidence.github.io/2022/summer/domak1.png) no-repeat;
-    background-size: auto 55px;
+    background: url(https://twitch-coincidence.github.io/2022/winter/Logo.png) no-repeat;
+    background-size: auto 65px;
     display: block;
     width: 200px;
-    height: 55px;
-    background-position: left, right;
+    height: 65px;
+    background-position: left;
 }
 
 header .row>div:nth-child(1)>a img {
@@ -54,12 +54,12 @@ display: none; /*기본 로고 숨김*/
 }
 
 header #header-bar>.row, #main #main-content>div.frame {
-    border-top: 5px solid #315bb7 !important;
-    border: 1px solid #315bb7;
+    border-top: 5px solid #2e213e !important;
+    border: 1px solid #2e213e;
 }
 
 header #right-search-form>input[type=text]{
-border: 3px solid #315bb7;
+border: 3px solid #2e213e;
 }
 
 header #right-search-form>#right-search-btn,
@@ -67,7 +67,7 @@ header #right-search-form>#right-search-btn,
 #board-info #board-info-bottom a,
 .fa-home,
 .pagination>li>a, .pagination>li>span{
-color: #315bb7;
+color: #2e213e;
 }
 
 #article-list>.article-list-row>.item>.list-title>.list-writer.logged>span{
@@ -76,29 +76,30 @@ color: #5d6d85;
 
 header #header-bar #header-top-notice strong.notice-badge,
 #article-list>.article-list-row>.item>.list-header>span{
-background: #315bb7;
+background: #2e213e;
 }
 
 #article-list #article-list-category {
-    border: 2px solid #315bb7 !important;
-    background: #c0e6ff;
+    border: 2px solid #2e213e !important;
+    background: #c1bdcd !important;
     border-radius: 15px !important;
     box-shadow: none !important;
 }
 
 article-content-wrapper>.header {
-    border-top: 2px solid #315bb7;
-    background: #c0e6ff;
+    border-top: 2px solid #2e213e;
+    background: #c1bdcd;
 }
 
 #article-list #article-list-category>a{
-    background: #c0e6ff !important;
+    background: #c1bdcd !important;
     border-radius: 15px;
+    border-bottom: none !important;
 }
 
 .pagination>li>a,
 .pagination>li>span{
-border: 1px solid #315bb7;
+border: 1px solid #2e213e;
 }
 
 .pagination>.active>a,
@@ -107,18 +108,18 @@ border: 1px solid #315bb7;
 .pagination>.active>span, 
 .pagination>.active>span:focus,
 .pagination>.active>span:hover{
-background: #315bb7;
+background: #2e213e;
 }
 
 .pagination>.active>a,
 .pagination>.active>a:focus,
 .pagination>.active>a:hover{
-border: 1px solid #315bb7;
+border: 1px solid #2e213e;
 }
 
 .btn-primary{
-background: #315bb7;
-border: 1px solid #315bb7;
+background: #2e213e;
+border: 1px solid #2e213e;
 }
 
 #viewers{
@@ -135,7 +136,6 @@ font-weight: 500;
     background-position: right;
     padding-right: 13px;
     margin-right: 1px;
-    margin-left: 60px;
 }
 
 #board-info #viewers-area #viewers:after {
@@ -167,7 +167,7 @@ font-weight: 500;
 .vote-btn[data-type="up"]::before {
     display: inline-block;
     background: white;
-    border: solid #315bb7 1px;
+    border: solid #2e213e 1px;
     float: left;
     width: 60px;
     height: 60px;
@@ -178,11 +178,11 @@ font-weight: 500;
     padding-top:10px;
     padding-left: 2px;
     transition:color .2s ease;
-    color: #315bb7;
+    color: #2e213e;
 }
 
 .vote-btn[data-type="up"]:hover::before {
-    background: #315bb7;
+    background: #2e213e;
     color: white;
 }
 
@@ -191,7 +191,7 @@ font-weight: 500;
     padding-top: 14px;
     padding-left: 15px;
     font-size: 22px;
-    color: #315bb7;
+    color: #2e213e;
 }
 
 /* 배너 */
@@ -203,21 +203,21 @@ header #header-bar #header-top-notice strong.notice-badge, header #header-bar>.r
 /* 좌측 배너 */
 
 #main .menu-wrapper {
-    border: 1px solid #315bb7;
+    border: 1px solid #2e213e;
     border-top: none;
 }
 
 /* 좌측 배너 헤더 */
 
 #main .menu-wrapper>.header {
-    background: #315bb7;
+    background: #2e213e;
     border-radius: 15px 15px 0 0;
 }
 
 /* 좌측 배너 이니셜 */
 
 #main .menu-wrapper>a>em {
-    color: #315bb7;
+    color: #2e213e;
 }
 
 /* 좌측 배너 빈 공간 */
@@ -235,7 +235,7 @@ header #header-bar #header-top-notice strong.notice-badge, header #header-bar>.r
 /* 좌측 배너 점 */
 
 .fa-square:before {
-    color: #315bb7;
+    color: #2e213e;
 }
 
 /* 작성자 (스트리머) */
@@ -265,7 +265,7 @@ img[alt="Moderator"] {
 /* 메인 배너 헤더 가운데 줄 */
 
 #board-info h1 {
-    border-bottom: 1px solid #315bb7;
+    border-bottom: 1px solid #2e213e;
     margin-left: 105px;
 }
 
@@ -276,6 +276,7 @@ img[alt="Moderator"] {
 #article-list #article-list-category > a.active, #article-list #article-list-category>a:hover {
     border-radius: 15px;
     background: #fff !important;
+    border-bottom: none !important;
 }
 
 #article-list #article-option-area {
@@ -283,12 +284,12 @@ img[alt="Moderator"] {
 }
 
 #article-content-wrapper>.header {
-    border-top: 2px solid #315bb7;
-    background: #c0e6ff;
+    border-top: 2px solid #2e213e;
+    background: #c1bdcd;
 }
 
 #article-content-wrapper>.footer {
-    background: #c0e6ff;
+    background: #c1bdcd;
 }
 
 
@@ -359,7 +360,7 @@ span#viewers, span#viewers:before, span#viewers:after, #article-list #boardSearc
 }
 
 #article-list>.article-list-row.notice {
-    background-color: #c0e6ff;
+    background-color: #c1bdcd;
 }
 
 #article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time {
@@ -372,7 +373,7 @@ span#viewers, span#viewers:before, span#viewers:after, #article-list #boardSearc
 }
 
 #article-list>.article-list-row {
-    border: 1px solid #315bb7;
+    border: 1px solid #2e213e;
     border-radius: 20px;
     margin: 4px 0;
 }
@@ -392,29 +393,4 @@ i.fa.fa-heart {
 
 .article-list-row:nth-child(3n+2) i.fa.fa-heart {
     animation-delay: calc(1s/3*2);
-}
-
-
-div#fav-shortcut-area>a[href="/hong_doyu"] {
-    background-image: url(https://twitch-coincidence.github.io/2022/summer/domak2.png) !important;
-    background-size: auto 29.38px !important;
-    background-repeat: no-repeat !important;
-    background-position: calc(100% - 10px) calc(100% + 29.38px) !important;
-}
-
-div#fav-shortcut-area>a[href="/hong_doyu"]:hover {
-    background-position-y: 0% !important;
-    transition: 0.4s ease;
-}
-
-#viewers-area:before {
-    content: "";
-    display: block;
-    background: url(https://twitch-coincidence.github.io/2022/summer/domak3.png);
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    top: 0px;
-    left: 260px;
-    background-size: 60px auto;
 }
