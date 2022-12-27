@@ -1,1 +1,420 @@
+@font-face {
+    font-family: 'KOMACON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.2);
+    }
+    55% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+html {
+    background: linear-gradient(white, #6697d9 75%);
+    height: auto;
+}
+
+body {
+    letter-spacing: -0.05em !important;
+    background: transparent;
+    font-family: KOMACON;
+    background-image: url(https://twitch-coincidence.github.io/2022/summer/bgimg.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+}
+
+header .row>div:nth-child(1)>a {
+    float: left;
+    position: absolute;
+    background: url(https://twitch-coincidence.github.io/2022/summer/logoimg.png) no-repeat, url(http://twitch-coincidence.github.io/2022/summer/domak1.png) no-repeat;
+    background-size: auto 55px;
+    display: block;
+    width: 200px;
+    height: 55px;
+    background-position: left, right;
+}
+
+header .row>div:nth-child(1)>a img {
+display: none; /*기본 로고 숨김*/
+}
+
+header #header-bar>.row, #main #main-content>div.frame {
+    border-top: 5px solid #315bb7 !important;
+    border: 1px solid #315bb7;
+}
+
+header #right-search-form>input[type=text]{
+border: 3px solid #315bb7;
+}
+
+header #right-search-form>#right-search-btn,
+#article-list>.article-list-row>.item>.list-title>small.comment-count,
+#board-info #board-info-bottom a,
+.fa-home,
+.pagination>li>a, .pagination>li>span{
+color: #315bb7;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span{
+color: #5d6d85;
+}
+
+header #header-bar #header-top-notice strong.notice-badge,
+#article-list>.article-list-row>.item>.list-header>span{
+background: #315bb7;
+}
+
+#article-list #article-list-category {
+    border: 2px solid #315bb7 !important;
+    background: #c0e6ff;
+    border-radius: 15px !important;
+    box-shadow: none !important;
+}
+
+article-content-wrapper>.header {
+    border-top: 2px solid #315bb7;
+    background: #c0e6ff;
+}
+
+#article-list #article-list-category>a{
+    background: #c0e6ff !important;
+    border-radius: 15px;
+}
+
+.pagination>li>a,
+.pagination>li>span{
+border: 1px solid #315bb7;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span, 
+.pagination>.active>span:focus,
+.pagination>.active>span:hover{
+background: #315bb7;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover{
+border: 1px solid #315bb7;
+}
+
+.btn-primary{
+background: #315bb7;
+border: 1px solid #315bb7;
+}
+
+#viewers{
+color: #5d6d85;
+font-size: 12px;
+font-weight: 500;
+}
+
+#board-info #viewers-area #viewers:before {
+    content: "도청자";
+    font-size: 12px;
+    font-weight: 500;
+    background: url(https://cdn.discordapp.com/attachments/577710273994162176/582202325347860491/dou_heart.png) no-repeat;
+    background-position: right;
+    padding-right: 13px;
+    margin-right: 1px;
+    margin-left: 60px;
+}
+
+#board-info #viewers-area #viewers:after {
+content: "명";
+cursor: text;
+color: #5d6d85;
+font-size: 12px;
+font-weight: 500;
+}
+
+.fa-user{
+    display: none;
+}
+
+/* 여기부터 추가하는 사항 */
+
+/* 게시글 추천 */
+
+.vote-btn[data-type="up"] {
+    border: none;
+    font-size: 0;
+    outline: 0 !important; 
+}
+
+.vote-btn[data-type="up"]:hover {
+    background: none !important;
+}
+
+.vote-btn[data-type="up"]::before {
+    display: inline-block;
+    background: white;
+    border: solid #315bb7 1px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    font: normal 22px/1 FontAwesome;
+    font-size: 26pt;
+    content: "\f164";
+    padding-top:10px;
+    padding-left: 2px;
+    transition:color .2s ease;
+    color: #315bb7;
+}
+
+.vote-btn[data-type="up"]:hover::before {
+    background: #315bb7;
+    color: white;
+}
+
+.vote-btn[data-type="up"] span {
+    float: left;
+    padding-top: 14px;
+    padding-left: 15px;
+    font-size: 22px;
+    color: #315bb7;
+}
+
+/* 배너 */
+
+header #header-bar #header-top-notice strong.notice-badge, header #header-bar>.row, #main .menu-wrapper, #main #main-content>div.frame, header #right-search-form>input[type=text] {
+    border-radius: 15px;
+}
+
+/* 좌측 배너 */
+
+#main .menu-wrapper {
+    border: 1px solid #315bb7;
+    border-top: none;
+}
+
+/* 좌측 배너 헤더 */
+
+#main .menu-wrapper>.header {
+    background: #315bb7;
+    border-radius: 15px 15px 0 0;
+}
+
+/* 좌측 배너 이니셜 */
+
+#main .menu-wrapper>a>em {
+    color: #315bb7;
+}
+
+/* 좌측 배너 빈 공간 */
+
+#main .menu-wrapper .spacer {
+    display: none;
+}
+
+/* 좌측 배너 하단 */
+
+#main .menu-wrapper a:nth-last-child(1) {
+    border-radius: 0px 0px 15px 15px;
+}
+
+/* 좌측 배너 점 */
+
+.fa-square:before {
+    color: #315bb7;
+}
+
+/* 작성자 (스트리머) */
+
+img[alt="Broadcaster"] {
+    content: url(https://dolgether.github.io/doyu_streamer_icon.png) !important;
+    width: 18px;
+}
+
+/* 작성자 (트게더 관리자) */
+
+img[alt="Moderator"] {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/592335072661733436/728a895013f128c8.png?raw=true) !important;
+    width: 18px;
+}
+
+/* 메인 배너 스트리머 이미지 */
+
+#board-info #board-info-profile-img {
+    width: 100px;
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+    content: url(https://dolgether.github.io/doyu_profile_img2.png);
+}
+
+/* 메인 배너 헤더 가운데 줄 */
+
+#board-info h1 {
+    border-bottom: 1px solid #315bb7;
+    margin-left: 105px;
+}
+
+#board-info #board-info-bottom {
+    float: right;
+}
+
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover {
+    border-radius: 15px;
+    background: #fff !important;
+}
+
+#article-list #article-option-area {
+    right: 25px;
+}
+
+#article-content-wrapper>.header {
+    border-top: 2px solid #315bb7;
+    background: #c0e6ff;
+}
+
+#article-content-wrapper>.footer {
+    background: #c0e6ff;
+}
+
+
+
+
+/* 마우스 커서 포인터 */
+
+html, body, .fr-popup.emoticons, .fr-top, select.form-control, input[type=checkbox], input[type=radio], .opt {
+    cursor: url(https://dolgether.github.io/doyu_cur_default.png) 0 0, auto !important;
+}
+
+/* 마우스 커서 링크 */
+
+#right-search-form>#right-search-btn, #board-info #board-info-bottom #addFavoriteBtn, #article-list #article-option-area>#article-option-area-toggle-btn, #article-list>.article-list-row>.item>.list-title>.list-writer>span, .reply > .reply-header > .reply-writer.logged, .reply-menu, .btn, .fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn, .fr-view img, .pull-left, a {
+    cursor: url(https://dolgether.github.io/doyu_cur_link.png) 0 0, auto !important;
+}
+
+/* 마우스 커서 텍스트 */
+
+span#viewers, span#viewers:before, span#viewers:after, #article-list #boardSearchForm .form-control, .fr-view, .fr-box.fr-basic.fr-element, input[type='text'] {
+    cursor: url(https://dolgether.github.io/doyu_cur_txt.png) 0 0, auto !important;
+}
+
+#movetotop {
+    opacity: 1;
+    background: url(https://cdn.discordapp.com/attachments/577710273994162176/949311546515914773/0634477b3fea84be.png);
+    width: 160px;
+    height: 160px;
+    background-size: 160px;
+}
+
+#movetotop > img {
+    display: none !important;
+}
+
+#article-list {
+    background-image: url(https://twitch-coincidence.github.io/2022/summer/articlebgimg.png);
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: 65% calc(100% - 115px);
+}
+
+#article-list>.article-list-row:hover {
+    background: #fafafa80;
+}
+
+.dropdown-menu>li>a:hover {
+    background: transparent;
+    transform: scaleX(1.05);
+    transition: .1s;
+}
+
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+    border-radius: 15px;
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.3s cubic-bezier(0.2, 1.5, 0, 1);
+    padding: 8px 0 3px 0px;
+}
+
+#article-list>.article-list-row.notice {
+    background-color: #c0e6ff;
+}
+
+#article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time {
+    border: 0;
+}
+
+#article-list>.article-list-row.notice {
+    border-radius: 20px;
+    margin: 4px 0;
+}
+
+#article-list>.article-list-row {
+    border: 1px solid #315bb7;
+    border-radius: 20px;
+    margin: 4px 0;
+}
+
+img.reply-writer-image.img-circle.error, img.img-rounded.article-profile-img.error {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/826401615589539930/2.png);
+}
+
+i.fa.fa-heart {
+    color: #ff6633;
+    animation: linear 1s heart 7;
+}
+
+.article-list-row:nth-child(3n+1) i.fa.fa-heart {
+    animation-delay: calc(1s/3*1);
+}
+
+.article-list-row:nth-child(3n+2) i.fa.fa-heart {
+    animation-delay: calc(1s/3*2);
+}
+
+
+div#fav-shortcut-area>a[href="/hong_doyu"] {
+    background-image: url(https://twitch-coincidence.github.io/2022/summer/domak2.png) !important;
+    background-size: auto 29.38px !important;
+    background-repeat: no-repeat !important;
+    background-position: calc(100% - 10px) calc(100% + 29.38px) !important;
+}
+
+div#fav-shortcut-area>a[href="/hong_doyu"]:hover {
+    background-position-y: 0% !important;
+    transition: 0.4s ease;
+}
+
+#viewers-area:before {
+    content: "";
+    display: block;
+    background: url(https://twitch-coincidence.github.io/2022/summer/domak3.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 260px;
+    background-size: 60px auto;
+}
