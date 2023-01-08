@@ -1,1 +1,180 @@
+@font-face {
+    font-family: 'KOMACON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+body {
+    letter-spacing: -0.05em !important;
+    background: transparent;
+    font-family: KOMACON;
+}
+
+header {
+    border-bottom: 4px solid #2e213e;
+    background: #c1bdcd;
+}
+
+header.nav-up {
+    top: -100px;
+}
+
+body div:nth-child(6) {
+    background: #fff;
+}
+
+header > #header-area > a > h1 {
+    background: url(https://twitch-coincidence.github.io/2022/winter/Logo.png) no-repeat;
+    background-size: 120px auto;
+    display: block;
+    width: 120px;
+    height: 60px;
+    left: calc(50% - 60px);
+    float: left;
+    position: absolute;
+    top: -3px;
+}
+
+header > #header-area > #header-search-link,
+header > #header-area > #header-bar-link,
+header > #header-search-bar #header-close-search-btn,
+header > #header-search-bar #header-search-btn {
+    color: #2e213e;
+}
+
+header > #header-search-bar #header-search-input {
+    border: 2px solid #2e213e;
+}
+
+#article-list #article-list-category > a,
+#article-list #article-list-category,
+#article-content-wrapper > .header {
+    background: #c1bdcd;
+}
+
+nav#nav {
+    background-color: #fff;
+}
+
+#header-top-notice strong.notice-badge,
+#article-list > .article-list-row > .item > .list-header > span,
+.btn-primary,
+nav#nav > .nav-header {
+    background: #2e213e;
+    border: 0;
+}
+
+#article-list > .article-list-row.notice {
+    background-color: #c1bdcd;
+}
+
+#article-list > .article-list-row > .item > a.list-title > .list-writer.logged > span {
+    color: #5d6d85;
+}
+
+#article-list > .article-list-row > .item > a.list-title > small.comment-count,
+.fa-home,
+nav#nav > #nav-upper > #header-close-bar-link {
+    color: #2e213e;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background: #2e213e;
+    border-color: #2e213e;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    color: #2e213e;
+    border-color: #2e213e;
+}
+
+footer {
+    background: #fef7fe;
+}
+
+#viewers {
+    color: #5d6d85;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#board-info #viewers-area #viewers:before {
+    content: "도청자";
+    font-size: 12px;
+    font-weight: 500;
+    background: url(https://cdn.discordapp.com/attachments/577710273994162176/582202325347860491/dou_heart.png) no-repeat;
+    background-position: right;
+    padding-right: 13px;
+    margin-right: 1px;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: "명";
+    cursor: text;
+    color: #5d6d85;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.fa-user {
+    display: none;
+}
+
+/* 작성자 (스트리머) */
+
+img[alt="Broadcaster"] {
+    content: url(https://dolgether.github.io/doyu_streamer_icon.png) !important;
+    width: 18px;
+}
+
+/* 작성자 (트게더 관리자) */
+
+img[alt="Moderator"] {
+    content: url(https://cdn.discordapp.com/attachments/577710273994162176/592335072661733436/728a895013f128c8.png?raw=true) !important;
+    width: 18px;
+}
+
+#movetotop {
+    opacity: 1;
+    background: url(https://cdn.discordapp.com/attachments/577710273994162176/949311546515914773/0634477b3fea84be.png);
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+}
+
+#movetotop > img {
+    display: none !important;
+}
+
+#board-info > h1 > #board-info-profile-img {
+    width: 70px;
+    height: 70px;
+    content: url(https://dolgether.github.io/doyu_profile_img2.png);
+    position: absolute;
+    top: 80px;
+    left: 10px;
+}
+
+#board-info > h1 {
+    padding: 20px 0.5em 0.5em 90px;
+}
+
+#board-info {
+    height: 70px;
+}
+
+#article-list #article-list-category {
+    height: 40px;
+}
+
+#article-list #article-list-category > a.active, #article-list #article-list-category > a:hover {
+    background: #fff;
+    height: 40px;
+}
