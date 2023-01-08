@@ -50,7 +50,7 @@ header > #header-search-bar #header-search-input {
 #article-list #article-list-category > a,
 #article-list #article-list-category,
 #article-content-wrapper > .header {
-    background: #c1bdcd;
+    background: #7a7781;
 }
 
 nav#nav {
@@ -144,9 +144,9 @@ img[alt="Moderator"] {
 #movetotop {
     opacity: 1;
     background: url(https://cdn.discordapp.com/attachments/577710273994162176/949311546515914773/0634477b3fea84be.png);
-    width: 80px;
-    height: 80px;
-    background-size: 80px 80px;
+    width: 120px;
+    height: 120px;
+    background-size: 120px 120px;
 }
 
 #movetotop > img {
