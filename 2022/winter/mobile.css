@@ -168,6 +168,7 @@ img[alt="Moderator"] {
 
 #board-info {
     height: 70px;
+    border-bottom: none;
 }
 
 #article-list #article-list-category {
