@@ -183,4 +183,5 @@ img[alt="Moderator"] {
     background: #fff;
     height: 40px;
     border-top: solid 4px;
+    top: -1px;
 }
