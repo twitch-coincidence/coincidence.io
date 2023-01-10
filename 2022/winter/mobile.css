@@ -53,6 +53,10 @@ header > #header-search-bar #header-search-input {
     background: #18111f;
 }
 
+#article-list #article-list-category>a:first-child {
+    top: 0px !important;
+}
+
 nav#nav {
     background-color: #fff;
 }
@@ -178,4 +182,5 @@ img[alt="Moderator"] {
 #article-list #article-list-category > a.active, #article-list #article-list-category > a:hover {
     background: #fff;
     height: 40px;
+    border-top: solid 4px;
 }
