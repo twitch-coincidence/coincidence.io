@@ -50,7 +50,7 @@ header > #header-search-bar #header-search-input {
 #article-list #article-list-category > a,
 #article-list #article-list-category,
 #article-content-wrapper > .header {
-    background: #7a7781;
+    background: #18111f;
 }
 
 nav#nav {
@@ -106,7 +106,7 @@ footer {
 }
 
 #board-info #viewers-area #viewers:before {
-    content: "도청자";
+    content: "도막이";
     font-size: 12px;
     font-weight: 500;
     background: url(https://cdn.discordapp.com/attachments/577710273994162176/582202325347860491/dou_heart.png) no-repeat;
