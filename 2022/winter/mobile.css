@@ -183,5 +183,6 @@ img[alt="Moderator"] {
     background: #fff;
     height: 40px;
     border-top: solid 4px;
+    position: relative;
     top: -1px;
 }
