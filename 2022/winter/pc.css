@@ -91,7 +91,7 @@ background: #2e213e;
 
 #article-list #article-list-category {
     border: 2px solid #2e213e !important;
-    background: #c1bdcd !important;
+    background: #18111f !important;
     border-radius: 15px !important;
     box-shadow: none !important;
 }
@@ -102,7 +102,7 @@ article-content-wrapper>.header {
 }
 
 #article-list #article-list-category>a{
-    background: #c1bdcd !important;
+    background: #18111f !important;
     border-radius: 15px;
     border-bottom: none !important;
 }
@@ -139,7 +139,7 @@ font-weight: 500;
 }
 
 #board-info #viewers-area #viewers:before {
-    content: "도청자";
+    content: "도막이";
     font-size: 12px;
     font-weight: 500;
     background: url(https://cdn.discordapp.com/attachments/577710273994162176/582202325347860491/dou_heart.png) no-repeat;
